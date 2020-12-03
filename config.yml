@@ -1,0 +1,16 @@
+title: DataScience2020
+description: 'SWBio DTP '
+template:
+  repo: datascience2020-template
+  name: datascience2020
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
